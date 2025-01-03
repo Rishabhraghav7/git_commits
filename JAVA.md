@@ -54,6 +54,74 @@ filter()
 
 ```
 List<Integer> nums = Arrays.asList(1,2,3,4,5,6,7,8,9);
-List<Integer> nums = nums.stream().filter(n->n%2==0).collect(Collectors.toList());
+List<Integer> num = nums.stream().filter(n->n%2==0).collect(Collectors.toList());
 System.out.println(nums);
+```
+
+sorted()
+
+```
+List<Integer> nums = Arrays.asList(1,2,3,4,5,6,7,8,9);
+List<Integer> num = nums.stream().sorted().collect(Collectors.toList());
+System.out.println(nums);
+```
+
+limit()
+```
+nums.stream().limit(5).forEach(System.out::println);
+```
+
+skip()
+```
+nums.stream().skip(5).forEach(System.out::println);
+```
+
+anyMatch(),allMatch(),noneMatch()
+all returns boolean value 
+```
+boolean greater = numbers.stream().anyMatch(n -> n > 5);
+```
+
+
+foreach(),reduce(),count(),collect()
+these are terminal operations 
+ 
+ foreach()
+
+```
+List<Integer> nums = Arrays.asList(1,2,3,4,5,6,7,8,9);
+num.stream().forEach(number->System.out.println(number))
+```
+
+reduce()
+```
+int sum = nums.stream().reduce((a, b) -> a + b);
+```
+
+count()
+
+```
+int c = numbers.stream().count();
+```
+
+
+arrayList(integer value) to array(int value)
+
+```
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamToArray {
+    public static void main(String[] args) {
+        List<Integer> integerList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+        int[] intArray = integerList.stream()
+                                    .mapToInt(Integer::intValue)  
+                                    .toArray();                   
+
+        
+    
+    }
+}
+
 ```
