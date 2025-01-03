@@ -108,7 +108,7 @@ int c = numbers.stream().count();
 arrayList(integer value) to array(int value)
 
 ```
-public class StreamToArray {
+class Main {
     public static void main(String[] args) {
         List<Integer> integerList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
         int[] intArray = integerList.stream()
