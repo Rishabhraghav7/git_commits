@@ -108,10 +108,6 @@ int c = numbers.stream().count();
 arrayList(integer value) to array(int value)
 
 ```
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class StreamToArray {
     public static void main(String[] args) {
         List<Integer> integerList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
