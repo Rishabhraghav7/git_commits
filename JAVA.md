@@ -111,7 +111,7 @@ arrayList(integer value) to array(int value)
 class Main {
     public static void main(String[] args) {
         List<Integer> nums = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-        int[] intArray = nums.stream()
+        int[] arr = nums.stream()
                                     .mapToInt(Integer::intValue)  
                                     .toArray();                   
 

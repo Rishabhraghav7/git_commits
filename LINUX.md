@@ -15,26 +15,43 @@ yay
 sudo pacman -Syu
 ```
 update type-2
-not recommended, coz 
+
 ```
 garuda-update
 ```
 update time , date (update as the network conned)
 `sudo timedatectl set-ntp true
 
-whatis {command name }
-locate
-vlock{lock terminal }
-swaylock --e{dont validate when provided empty}
-waylock {wayland lock}
-gtklock{lock secreen with a viewable interface}
-yay -Rcns{ remove with deleting all its dependencies }
+lock terminal 
+```
+vlock
+```
+swaylock 
+--e{dont validate when provided empty}
+```
+swaylock --e
+```
+waylock
+```
+waylock 
+```
+
+{lock secreen with a viewable interface}
+```
+gtklock
+```
+delete an application
+
 		R{remove}
 		c{config}
 		n{dependencies}
 		s{unwanted dependencies for the package}
+```
+yay -Rcns
+```
 
-	alt+ctrl+f3(pure terminal)
+
+	alt+ctrl+f3(tty terminal)
 	
 	
 	
