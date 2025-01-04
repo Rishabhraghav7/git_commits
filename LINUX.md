@@ -42,10 +42,10 @@ gtklock
 ```
 delete an application
 
-		R{remove}
-		c{config}
-		n{dependencies}
-		s{unwanted dependencies for the package}
+R{remove}
+c{config}
+n{dependencies}
+s{unwanted dependencies for the package}
 ```
 yay -Rcns
 ```
