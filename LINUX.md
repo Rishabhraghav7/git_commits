@@ -58,6 +58,7 @@ ln filename
 ```
 
 paste 
+
 when removed -o it copies to clipboard
 ```
 xclip -selection clipboard -o
