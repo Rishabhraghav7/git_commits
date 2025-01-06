@@ -64,3 +64,6 @@ xclip -selection clipboard -o
 
 echo "Hello, World!" | xclip -selection clipboard
 ``` 
+```
+xsel --clipboard --output 
+```
