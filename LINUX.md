@@ -56,3 +56,11 @@ no.of.lines
 ```
 ln filename
 ```
+
+paste 
+when removed -o it copies to clipboard
+```
+xclip -selection clipboard -o
+
+echo "Hello, World!" | xclip -selection clipboard
+``` 
