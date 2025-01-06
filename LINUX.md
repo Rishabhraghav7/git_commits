@@ -52,6 +52,7 @@ yay -Rcns
 
 
 	alt+ctrl+f3(tty terminal)
-	
-	
-	
+no.of.lines
+```
+ln filename
+```
