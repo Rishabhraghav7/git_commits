@@ -68,3 +68,8 @@ echo "Hello, World!" | xclip -selection clipboard
 ```
 xsel --clipboard --output 
 ```
+
+poweroff
+```
+systemctl poweroff
+```

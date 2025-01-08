@@ -35,8 +35,7 @@
               "title": "LINUX"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,7 +176,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0477dfe5e19e43c1",
+  "active": "0ff3ccd91abaf68d",
   "lastOpenFiles": [
     "JAVA.md",
     "LINUX.md",
