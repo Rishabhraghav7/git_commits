@@ -72,4 +72,5 @@ xsel --clipboard --output
 poweroff
 ```
 systemctl poweroff
+sudo poweroff
 ```
