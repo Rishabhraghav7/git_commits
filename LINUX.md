@@ -73,4 +73,11 @@ poweroff
 ```
 systemctl poweroff
 sudo poweroff
+sudo init 0
+```
+ creating a shortcut for linux command 
+ use alias 
+ let me build a short cut for directing to Documents folder
+ ```
+ alias docs="cd ~/Documents"
 ```
