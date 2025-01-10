@@ -82,5 +82,6 @@ sudo init 0
  alias docs="cd ~/Documents"
 ```
 now when entered with docs it literally executes the cd Documents command 
+
 but this is a temporary change 
 once you start a new terminal / terminal emulator it doesn't have the changes saved 
