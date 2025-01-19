@@ -1,4 +1,4 @@
-man {mannual} 
+man {mannual } 
 ```
 man ls
 man git
