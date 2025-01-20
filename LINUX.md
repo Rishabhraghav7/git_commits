@@ -88,3 +88,6 @@ using duckduckgo search engine
 ddgr "term to search "
 ```
 i have installed it through paru this time
+
+paru and yay are both AUR helpers which runs pacman (package manager) commands
+paru is developed in rust while yay in go
