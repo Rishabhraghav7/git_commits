@@ -91,3 +91,15 @@ i have installed it through paru this time
 
 paru and yay are both AUR helpers which runs pacman (package manager) commands
 paru is developed in rust while yay in go
+
+another one to surf
+its surfraw
+installation
+```
+paru -S surfraw
+```
+```
+surfraw S-engine "query"
+
+surfraw google "linux tips"
+```
