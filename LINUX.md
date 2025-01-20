@@ -87,3 +87,4 @@ using duckduckgo search engine
 ```
 ddgr "term to search "
 ```
+i have installed it through paru this time
