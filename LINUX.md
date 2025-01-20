@@ -81,3 +81,9 @@ now when entered with docs it literally executes the cd Documents command
 
 but this is a temporary change
 once you start a new terminal / terminal emulator it doesn't have the changes saved
+
+surf the internet with terminal
+using duckduckgo search engine
+```
+ddgr "term to search "
+```
