@@ -39,4 +39,4 @@ i was able to detect the SingletonLock which caused the error then removed it by
 ```
 i additionally removed SingletonCookie , SingletonSocket along with it which are related to SingletonLock 
 
-finally i was able to open chrome s
+finally i was able to open chrome 
