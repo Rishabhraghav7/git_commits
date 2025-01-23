@@ -121,3 +121,8 @@ animations {
     animation = workspaces, 1, 6, default
 }
 ```
+
+change permission to user 
+```
+sudo chown rishabh  animations.conf
+```
