@@ -126,3 +126,4 @@ change permission to user
 ```
 sudo chown rishabh  animations.conf
 ```
+
