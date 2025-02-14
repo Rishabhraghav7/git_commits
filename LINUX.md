@@ -127,3 +127,13 @@ change permission to user
 sudo chown rishabh  animations.conf
 ```
 
+activating firewall 
+```
+sudo ufw activate 
+```
+this enables the Uncomplicated Firewall
+suppose your fire wall blocks a specific site wthich you wanted 
+enable like this
+```
+sudo ufw allow http
+```
