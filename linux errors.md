@@ -40,3 +40,13 @@ i was able to detect the SingletonLock which caused the error then removed it by
 i additionally removed SingletonCookie , SingletonSocket along with it which are related to SingletonLock 
 
 finally i was able to open chrome 
+
+
+today i was facing an issue in updating my linux
+```
+error: GPGME error: No data
+error: GPGME error: No data
+error: GPGME error: No data
+```
+
+i faced error like this 
