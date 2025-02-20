@@ -233,8 +233,11 @@ then found a way from https://wiki.archlinux.org/title/Arch_User_Repository
 it had the simple ways 
 
 git clone {repo-link}
+
 cd {repo-name}
+
 makepkg
+
 pacman -U {file with .zst}
 
 gets it installed 
