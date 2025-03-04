@@ -69,7 +69,6 @@ poweroff
 ```
 systemctl poweroff
 sudo poweroff
-sudo init 0
 ```
  creating a shortcut for linux command
  use alias
@@ -105,35 +104,23 @@ surfraw S-engine "query"
 surfraw google "linux tips"
 ```
 
-
-```
-animations {
-    enabled = true
-
-   
-
-    bezier = myBezier, 0.05, 0.9, 0.1, 1.05
-
-    animation = windows, 1, 7, myBezier
-    animation = windowsOut, 1, 7, default, popin 80%
-    animation = border, 1, 10, default
-    animation = fade, 1, 7, default
-    animation = workspaces, 1, 6, default
-}
-```
-
 change permission to user 
 ```
 sudo chown rishabh  animations.conf
 ```
 
-activating firewall 
+connecting wifi trough terminal 
+nmcli 
 ```
-sudo ufw activate 
+nmcli device wifi list 
+nmcli device wifi conned {BSSID}
 ```
-this enables the Uncomplicated Firewall
-suppose your fire wall blocks a specific site wthich you wanted 
-enable like this
+
+with interface 
 ```
-sudo ufw allow http
+wifi-menu
+```
+
+```
+nmtui
 ```
