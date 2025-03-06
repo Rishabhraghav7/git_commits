@@ -116,7 +116,7 @@ nmcli device wifi list
 nmcli device wifi conned {BSSID}
 ```
 
-with interface 
+with interface in the terminal  
 ```
 wifi-menu
 ```
