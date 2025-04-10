@@ -187,3 +187,7 @@ int lcm(int a, int b) {
     return a * (b / gcd(a, b));
 }
 ```
+Sum of digits 
+```
+for(s=0;n;n/=10) s+=n%10;
+```
