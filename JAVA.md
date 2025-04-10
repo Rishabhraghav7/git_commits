@@ -121,3 +121,69 @@ class Main {
 }
 
 ```
+
+
+Alt..
+To swap numbers
+```
+a = a^b
+b = a^b
+a = a^b
+```
+
+Prime number
+```
+BigInteger.valueOf(n).isProbablePrime(10);
+```
+
+Count no.of digits 
+```
+int count = (int)Math.log10(n) + 1;
+```
+
+```
+int count = String.valueOf(n).length();
+```
+
+Power of 2 
+```
+if(n && !(n & (n-1)))
+```
+
+sum of  n numbers 
+
+odd 
+```
+n = 5;
+sum = n *n;
+```
+
+even 
+```
+n= 5;
+sum=n*(n+1);
+```
+
+Number is odd or even 
+```
+(n&1)==0?"Even":"Odd";
+```
+
+Unique element in an array 
+```
+for(int n:a)res^=n;
+```
+
+GCD
+
+```
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
+```
+LCM
+```
+int lcm(int a, int b) {
+    return a * (b / gcd(a, b));
+}
+```
