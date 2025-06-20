@@ -242,3 +242,77 @@ makepkg
 pacman -U {file with .zst}
 
 gets it installed
+
+
+Got this error while updating my system 
+
+```
+(119/119) checking keys in keyring                 [---------------] 100%
+(119/119) checking package integrity               [---------------] 100%
+error: btrfs-assistant: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/btrfs-assistant-2.2-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: garuda-update: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/garuda-update-4.8.8-1-any.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: google-chrome: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/google-chrome-137.0.7151.119-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: hyprwayland-scanner-git: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/hyprwayland-scanner-git-0.4.4.r5.gaa38edd-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: wayland-protocols-git: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/wayland-protocols-git-1.45.r1.g0c79b5c-1-any.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: grimblast-git: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/grimblast-git-r132.189f32f-1-any.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: gtkd: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/gtkd-3.11.0-3-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: hyprpicker-git: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/hyprpicker-git-0.4.5.r8.gd6a1363-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: lapce-git: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/lapce-git-0.4.2.r103.ga289ebd-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: lf-git: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/lf-git-35.r22.gb76d254-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: mhwd-nvidia: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/mhwd-nvidia-575.64.1-1-any.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: visual-studio-code-bin: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/visual-studio-code-bin-1.101.1-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: zen-browser-bin: signature from "TNE <tne@garudalinux.org>" is unknown trust
+:: File /var/cache/pacman/pkg/zen-browser-bin-1.13.2b-3-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: failed to commit transaction (invalid or corrupted package (PGP signature))
+Errors occurred, no packages were upgraded.
+
+```
+
+NOTE  :  a clear of cache of the pacman didn't solve it 
+
+ REASON :1 Outdated or broken `archlinux-keyring` or `garuda-keyring.
+		 2. Corrupted local keyring or partial sync.
+
+
+```
+sudo pacman -Sy archlinux-keyring garuda-keyring
+```
+
+error faced after the above command 
+
+```
+[sudo] password for rishabh:     
+:: Synchronizing package databases...
+ garuda is up to date
+ core is up to date
+ extra is up to date
+ multilib is up to date
+ chaotic-aur           628.9 KiB   345 KiB/s 00:02 [---------------] 100%
+warning: archlinux-keyring-20250430.1-1 is up to date -- reinstalling
+error: target not found: garuda-keyring
+```
