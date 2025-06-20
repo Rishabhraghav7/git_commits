@@ -296,6 +296,7 @@ Errors occurred, no packages were upgraded.
 NOTE  :  a clear of cache of the pacman didn't solve it 
 
  REASON :1 Outdated or broken `archlinux-keyring` or `garuda-keyring.
+
 		 2. Corrupted local keyring or partial sync.
 
 
@@ -316,3 +317,28 @@ error faced after the above command
 warning: archlinux-keyring-20250430.1-1 is up to date -- reinstalling
 error: target not found: garuda-keyring
 ```
+
+```
+sudo pacman -Sy archlinux-keyring --noconfirm
+```
+
+```
+pacman -Ss keyring | grep -i chaotic
+```
+
+Look for any of the following:
+
+- `chaotic-keyring`
+    
+- `garuda-common-settings`
+    
+- `garuda-system-maintenance`
+    
+
+If found:
+
+```
+sudo pacman -S chaotic-keyring
+```
+
+If All  Fails: Full Keyring Reset
