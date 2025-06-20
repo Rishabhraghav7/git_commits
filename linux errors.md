@@ -297,7 +297,7 @@ NOTE  :  a clear of cache of the pacman didn't solve it
 
  REASON :1 Outdated or broken `archlinux-keyring` or `garuda-keyring.
 
-		 2. Corrupted local keyring or partial sync.
+2. Corrupted local keyring or partial sync.
 
 
 ```
