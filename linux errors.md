@@ -42,7 +42,7 @@ i additionally removed SingletonCookie , SingletonSocket along with it which are
 
 finally i was able to open chrome
 
-
+-------------------------------------------------------
 today i was facing an issue in updating my linux
 ```
 error: GPGME error: No data
@@ -166,7 +166,7 @@ then a normal yay or sudo pacman -Syu was enough
 
 
 
-
+-------------------------------------------------------
 Installing a package through aur
 
 i was stuck after executing yay kodelife
@@ -207,25 +207,6 @@ sha256sums=('596f43361ea431b040a36ea6519991457f214ff94ae5f62ec9a1abb354a5f1c0')
 package() {
         install -D -m755 "$srcdir/KodeLife" "$pkgdir/usr/bin/KodeLife"
 }
-
-
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
 ```
 not sure how to proceed after this
 
@@ -243,7 +224,7 @@ pacman -U {file with .zst}
 
 gets it installed
 
-
+-------------------------------------------------------
 Got this error while updating my system 
 
 ```
@@ -342,3 +323,5 @@ sudo pacman -S chaotic-keyring
 ```
 
 If All  Fails: Full Keyring Reset
+
+-------------------------------------------------------
